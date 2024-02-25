@@ -302,3 +302,5 @@ TSWLatexianTemp*
 
 *.pdf
 *.png
+
+**/.DS_Store
