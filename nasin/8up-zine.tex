@@ -1,0 +1,232 @@
+\documentclass[statementpaper,oneside,article,14pt]{memoir}
+\usepackage{geometry}
+\usepackage{libertine}
+\usepackage{kantlipsum}
+
+\usepackage{enumitem}
+\usepackage{fontspec}
+
+\setmainfont{Futura}
+\setmonofont{Fira Code}
+\newfontfamily\sitpon{nasin-nanpa}
+\newfontfamily\sitponalt{linja sike 5}
+
+\usepackage{titlesec}
+
+% Disable chapter/section numbering.
+\setsecnumdepth{none}
+\maxsecnumdepth{none}
+
+% Optional background
+% http://tex.stackexchange.com/a/276280
+\usepackage{transparent}
+\usepackage{eso-pic}
+\newcommand{\BackgroundPic}[1]{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+{\transparent{0.4} \includegraphics[width=\paperwidth,height=\paperheight,%
+keepaspectratio]{#1}}%
+\vfill
+}}}
+
+\setlength{\parindent}{1em}
+
+\begin{document}
+
+\titlespacing\subsection{0pt}{0pt}{0pt}
+
+\newcommand{\nimi}[3]{\item[{\sitpon#1} #2] #3}
+
+% Edit inside the { brackets } to change these.
+
+\title{{\sitpon{󱤪󱤨󱦓󱤿󱥬}} \\ lipu lili pi nasin toki}
+\author{{\sitpon󱤑󱦐󱥚󱤉󱤻󱥱󱦑} \\ jan Semu}
+\date{{\sitpon󱥤󱥡󱦓󱥫󱤣󱦓󱥜󱤻󱦓󱥜󱥣󱥇} \\ 13 May 2022}
+
+\begingroup
+\let\cleardoublepage\clearpage
+
+% \AddToShipoutPicture*{\BackgroundPic{samplecover}}
+
+\begin{titlingpage}
+\maketitle
+
+% Could add a small author's note, etc. here if you like.
+
+\end{titlingpage}
+
+\endgroup
+
+% As the zine is so short, you probably won't need page numbers; however, if you
+% want them, comment out the next line with a %.
+\pagestyle{empty}
+
+
+%% CONTENT GOES BELOW
+
+\subsection{{\sitpon󱤧} basic sentences}
+
+\noindent A basic sentence in toki pona consists of a subject and predicate. These are separated by li ({\sitpon󱤧}).
+If the subject is mi or sina ({\sitpon{󱤴󱥞}}) alone, li must be omitted.
+
+\begin{quote}
+  ona li pona. (They are good.)
+
+  mi moku. (I eat.)
+\end{quote}
+
+\subsection{{\sitpon󱥄} addressing}
+
+\noindent To make a sentence imperative, replace li with o ({\sitpon{󱥄}}). To mark it as vocative, you can put a comma after the o.
+
+\begin{quote}
+  o moku. (Please eat.)
+
+  jan o, toki! (Hello, person!)
+\end{quote}
+
+\subsection{{\sitpon{󱤉}} direct objects}
+
+\noindent To specify a direct object, use e ({\sitpon{󱤉}}) after li.
+
+\begin{quote}
+  mi moku e kili. (I eat the fruit.)
+
+  ona li toki e toki pona. (They speak about toki pona.)
+\end{quote}
+
+\noindent Adjectives and nouns can be used as predicates; in this case, if a direct object is stated,
+the subject is applying the predicate to the object, or causes the object to be 
+the adjective.
+
+\begin{quote}
+  mi pona e ijo. (I fix the thing.)
+
+  mi luka e nena. (I apply hand to the button; I press the button.)
+\end{quote}
+
+\subsection{{\sitpon󱤊} compound sentences}
+
+\noindent Toki Pona has no way of combining two separate sentences. However, you can use li multiple times 
+to specify multiple predicates, or e multiple times to specify multiple objects. To specify 
+multiple subjects, use en ({\sitpon󱤊}).
+
+\begin{quote}
+  mi en sina li lukin li kute e pipi e jan. (You and I look at and listen to bugs and people.)
+\end{quote}
+
+
+\subsection{{\sitpon󱥍} adjectives}
+
+\noindent Adjectives come after the nouns or verbs they modify. Each is applied left-to-right. To regroup adjectives, use pi ({\sitpon󱥍}).
+
+pi does not have any precise rules on how it regroups adjectives, and there is
+in fact no consensus among toki pona speakers on how it should be used (especially 
+with stacked pi's); meaning can usually be determined through context.
+
+\begin{quote}
+  ilo kalama (instrument)
+
+  ilo kalama suli (big instrument)
+
+  ilo pi kalama suli (loud tool)
+\end{quote}
+\subsection{{\sitpon󱤡} la}
+
+\noindent The particle la ({\sitpon󱤡}) is called the ``context'' particle. 
+``A la B'' roughly means ``In the context of A, B.'' this can be used for time, adverbs, etc.
+
+\begin{quote}
+  tenpo kama la mi lape. (I sleep in the context of coming time; I will sleep.)
+
+  ken la mi lape. (I might sleep.)
+
+  mi moku e kili la mi lape. (I will sleep if I eat fruit.)
+\end{quote}
+
+\subsection{{\sitpon󱤬} prepositions}
+
+\noindent Some words (marked with \textit{prep.} in lipu lili pi nimi ale) in toki pona 
+function as prepositions (e.g.\ lon, tawa, kepeken, nanpa). These words
+should not be used with e; this makes them transitive.
+
+\begin{quote}
+  ona li lon. (They exist.)
+
+  mi lon tomo tawa. (I'm in the car.)
+
+  mi pana e kili tawa sina. (I give you a fruit.)
+
+  mi tawa e supa. (I move the table.)
+\end{quote}
+
+\noindent Position words (e.g.\ poka, monsi) can be turned into prepositions by putting lon before them.
+
+\begin{quote}
+  mi lon poka pi tomo tawa. (I'm near the car.)
+
+  mi lon poka supa e kili. (I place the fruit next to the table. Be warned that this example is not widely understood.)
+\end{quote}
+
+\subsection{{\sitpon󱥷} preverbs}
+
+\noindent Some words (e.g.\ wile, sona, kama) are \textit{preverbs}, meaning they are put before a verb
+to modify it. (These verbs are marked with \textit{pv.} in lipu lili pi nimi ale and lipu Linku.)
+
+\begin{quote}
+  mi wile moku. (I want to eat.)
+
+  mi ken pali e lipu. (I can make books.)
+\end{quote}
+
+\subsection{{\sitpon󱤑} names}
+
+\noindent All proper nouns in toki pona are marked with capitalization (or cartouches in sitelen pona).
+Proper nouns function as adjectives, meaning they must be prefixed with a noun that describes 
+the thing they refer to. It is common to revise these names to match toki pona's phonotactics.
+
+\begin{quote}
+  jan Semu (person named Semu; James)
+
+  toki Epelanto (language named Epelanto; Esperanto)
+\end{quote}
+
+To convert proper nouns into toki pona, follow these rules:
+
+\begin{enumerate}[itemsep=-5pt]
+\item Prioritize phonetics over spelling.
+\item Use endonyms instead of exonyms.
+\item Use local pronounciations rather than ``official'' ones.
+\item Follow toki pona phonotactics (shown on last page).
+\end{enumerate}
+
+\noindent See \textit{jan-ne.github.io/tp/tpize} for a full list.
+
+\subsection{{\sitpon󱥙} questions}
+
+\noindent Yes or no questions in toki pona can be formed in one of two ways: repeating the verb with ala in 
+between, and adding ``anu seme'' at the end of the sentence. These questions can be answered 
+by repeating the verb for yes, and repeating the verb followed by ala (or just ala) for no.
+
+\begin{quote}
+  kili li pona ala pona tawa sina? (do you like fruit?)
+
+  kili li pona tawa sina, anu seme? (do you like fruit?)
+\end{quote}
+Open-ended questions use ``seme'' ({\sitpon󱥙}), a word that functions similar to
+English words ``what'' and ``which''.
+
+\subsection{{\sitpon󱤕} phonotactics}
+
+toki pona has the consonants \textit{mnptkswlj} and the vowels \textit{iueoa}.
+
+Syllables in toki pona use the form \textit{CV(N)}, where \textit{C} is a consonant 
+that can be dropped at the start of a word, \textit{V} is a vowel, and \textit{N} is 
+an optional \textit{n}.
+
+The syllables \textit{wuwojiti} are disallowed, as well as the same syllables with added 
+\textit{n}. No two nasals can appear next to each other (i.e., no \textit{nm} or \textit{nn}).
+
+\end{document}

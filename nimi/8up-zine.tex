@@ -1,0 +1,221 @@
+\documentclass[statementpaper,oneside,article,14pt]{memoir}
+\usepackage{geometry}
+\usepackage{libertine}
+\usepackage{kantlipsum}
+
+\usepackage{enumitem}
+\usepackage{fontspec}
+
+\setmainfont{Futura}
+\setmonofont{Fira Code}
+\newfontfamily\sitpon{nasin-nanpa}
+\newfontfamily\sitponalt{linja sike 5}
+
+% Disable chapter/section numbering.
+\setsecnumdepth{none}
+\maxsecnumdepth{none}
+
+% Optional background
+% http://tex.stackexchange.com/a/276280
+\usepackage{transparent}
+\usepackage{eso-pic}
+\newcommand{\BackgroundPic}[1]{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+{\transparent{0.4} \includegraphics[width=\paperwidth,height=\paperheight,%
+keepaspectratio]{#1}}%
+\vfill
+}}}
+
+
+\begin{document}
+\newcommand{\nimi}[3]{\item[{\sitpon#1} #2] #3}
+
+% Edit inside the { brackets } to change these.
+
+\title{{\sitpon{󱤪󱤨󱦓󱥂󱤄}} \\ lipu lili pi nimi ale}
+\author{{\sitpon󱤑󱦐󱥚󱤉󱤻󱥱󱦑} \\ jan Semu}
+\date{{\sitpon󱥤󱤤󱦓󱥫󱤣󱦓󱥜󱤻󱦓󱥜󱥣󱥇} \\ 11 May 2022}
+
+\begingroup
+\let\cleardoublepage\clearpage
+
+% \AddToShipoutPicture*{\BackgroundPic{samplecover}}
+
+\begin{titlingpage}
+\maketitle
+
+% Could add a small author's note, etc. here if you like.
+
+\end{titlingpage}
+
+\endgroup
+
+% As the zine is so short, you probably won't need page numbers; however, if you
+% want them, comment out the next line with a %.
+\pagestyle{empty}
+
+
+%% CONTENT GOES BELOW
+
+\begin{description}[itemsep=-5.6pt,labelsep=1em,font=\textit]
+\nimi{󱤀}{a}{\textit{emphasis, emotion, confirmation}}
+\nimi{󱤁}{akesi}{reptile, amphibian}
+\nimi{󱤂}{ala}{no, not, zero; nothing}
+\nimi{󱤃}{alasa}{hunt, forage, seek; \textit{pv.}\ try, attempt}
+\nimi{󱤄}{ale, ali}{all, every | 100}
+\nimi{󱤆}{ante}{different, altered, changed, other}
+\nimi{󱤇}{anu}{or}
+\nimi{󱤈}{awen}{stay, safe; \textit{pv.}\ continue, keep}
+\nimi{󱤉}{e}{\textit{part.\ between pred, direct obj}}
+\nimi{󱤊}{en}{\textit{part.\ between subjects}}
+\nimi{󱤋}{esun}{market, shop, fair, transaction}
+\nimi{󱤌}{ijo}{thing, object}
+\nimi{󱤍}{ike}{bad, negative, non-essential | complex}
+\nimi{󱤎}{ilo}{tool, implement, device}
+\nimi{󱤏}{insa}{content, inside, between; internal organ, stomach}
+\nimi{󱤐}{jaki}{gross, obscene, toxic, unclean}
+\nimi{󱤑}{jan}{human being, person, somebody}
+\nimi{󱤒}{jelo}{yellow, yellowish}
+\nimi{󱤓}{jo}{have, carry, contain, hold}
+\nimi{󱤔}{kala}{fish, aquatic animal}
+\nimi{󱤕}{kalama}{sound, recite, utter}
+\nimi{󱤖}{kama}{arrive, come; \textit{pv.}\ become, manage to, succeed}
+\nimi{󱤗}{kasi}{plant, leaf}
+\nimi{󱤘}{ken}{can, allowed to; possible}
+\nimi{󱤙}{kepeken}{\textit{prep.}\ using, with}
+\nimi{󱤚}{kili}{fruit, vegetable}
+\nimi{󱥹}{kin}{also, too}
+\nimi{󱤛}{kiwen}{hard object, metal, rock, stone}
+\nimi{󱤜}{ko}{clay, semi-solid, paste, powder}
+\nimi{󱤝}{kon}{air; essence, abstract; invisible}
+\nimi{󱤞}{kule}{color, pigment | LGBTQ+}
+\nimi{󱤟}{kulupu}{community, group, society}
+\nimi{󱤠}{kute}{ear; hear, listen; attention, obey}
+\nimi{󱤡}{la}{\textit{part.\ context}}
+\nimi{󱤢}{lape}{sleep, rest}
+\nimi{󱤣}{laso}{blue, green}
+\nimi{󱤤}{lawa}{head, mind; control, lead, plan}
+\nimi{󱤥}{len}{clothing, fabric; cover, privacy}
+\nimi{󱤦}{lete}{cold, uncooked, raw}
+\nimi{󱤧}{li}{\textit{part.\ between subject, pred.}}
+\nimi{󱤨}{lili}{small, short; few; a bit; young}
+\nimi{󱤩}{linja}{long and flexible; cord, thread | line, connection}
+\nimi{󱤪}{lipu}{flat object; book, document, card, paper}
+\nimi{󱤫}{loje}{red, reddish}
+\nimi{󱤬}{lon}{\textit{prep.}\ on, in, at; real, true, existing | affirmative}
+\nimi{󱤭}{luka}{arm, hand, tactile organ; interact | 5}
+\nimi{󱤮}{lukin}{eye; look, see, examine, watch; seek; \textit{pv.}\ try to}
+\nimi{󱤯}{lupa}{door, hole, orifice, window}
+\nimi{󱤰}{ma}{earth, land, soil; territory}
+\nimi{󱤱}{mama}{parent, ancestor; creator; caretaker, sustainer}
+\nimi{󱤲}{mani}{money; large domesticated animal}
+\nimi{󱤳}{meli}{woman, female, feminine; wife}
+\nimi{󱤴}{mi}{\textit{1st person pronoun}}
+\nimi{󱤵}{mije}{man, male, masculine; husband}
+\nimi{󱤶}{moku}{eat, drink, consume; food}
+\nimi{󱤷}{moli}{dead, dying, kill}
+\nimi{󱤸}{monsi}{back, behind, rear}
+\nimi{󱤹}{mu}{animal noise or communication | non-speech vocalization}
+\nimi{󱤺}{mun}{moon, star | glow}
+\nimi{󱤻}{musi}{art, entertainment, recreation}
+\nimi{󱤼}{mute}{many, more, very; quantity | 3+, 20}
+\nimi{󱥸︀}{namako}{spice, additional, extra}
+\nimi{󱤽}{nanpa}{\textit{part.\ ordinal}; number}
+\nimi{󱤾}{nasa}{unusual, silly; intoxicated}
+\nimi{󱤿}{nasin}{way, custom, doctrine, method, path}
+\nimi{󱥀}{nena}{bump, button, hill, nose}
+\nimi{󱥁}{ni}{that, this}
+\nimi{󱥂}{nimi}{name, word}
+\nimi{󱥃}{noka}{foot, leg; bottom, lower}
+\nimi{󱥄}{o}{\textit{part.\ imperative, vocative}}
+\nimi{󱥺}{oko}{eye, visual}
+\nimi{󱥅}{olin}{love, compassion, respect, affection}
+\nimi{󱥆}{ona}{\textit{3rd person pronoun}}
+\nimi{󱥇}{open}{begin, open, turn on; \textit{pv.}\ start}
+\nimi{󱥈}{pakala}{botched, broken, mistake | \textit{expletive}}
+\nimi{󱥉}{pali}{do, work; build, make}
+\nimi{󱥊}{palisa}{long and hard; branch, stick}
+\nimi{󱥋}{pan}{grain, grain-based food}
+\nimi{󱥌}{pana}{give, send, emit, put, release}
+\nimi{󱥍}{pi}{\textit{part.\ regroup adjectives}}
+\nimi{󱥎}{pilin}{heart; feeling}
+\nimi{󱥏}{pimeja}{black, dark, unlit}
+\nimi{󱥐}{pini}{complete, end, finish; \textit{pv.}\ stop}
+\nimi{󱥑}{pipi}{bug, insect, spider}
+\nimi{󱥒}{poka}{side; next to, near | along with, beside}
+\nimi{󱥓}{poki}{container, vessel}
+\nimi{󱥔}{pona}{good, useful; friendly; simple}
+\nimi{󱥕}{pu}{interacting with Toki Pona: The Language of Good by Sonja Lang}
+\nimi{󱥖}{sama}{same, similar; peer; as, like}
+\nimi{󱥗}{seli}{fire; cooking element, chemical reaction, heat source}
+\nimi{󱥘}{selo}{outer layer; shell, skin; boundary}
+\nimi{󱥙}{seme}{what, which}
+\nimi{󱥚}{sewi}{above, high; awe-inspiring, divine}
+\nimi{󱥛}{sijelo}{body, physical state, torso}
+\nimi{󱥜}{sike}{round; ball, circle, cycle, wheel; year}
+\nimi{󱥝}{sin}{new, fresh; additional, extra}
+\nimi{󱥞}{sina}{\textit{2nd person pronoun}}
+\nimi{󱥟}{sinpin}{face, front, wall}
+\nimi{󱥠}{sitelen}{image, symbol, writing}
+\nimi{󱥡}{sona}{knowledge, skill, wisdom, information; science; \textit{pv.}\ know how}
+\nimi{󱥢}{soweli}{animal, land mammal}
+\nimi{󱥣}{suli}{big, long; important; adult}
+\nimi{󱥤}{suno}{sun; light, shine}
+\nimi{󱥥}{supa}{horizontal surface, furniture}
+\nimi{󱥦}{suwi}{sweet, cute, innocent}
+\nimi{󱥧}{tan}{\textit{prep.}\ by, from, because; origin}
+\nimi{󱥨}{taso}{but, however; only}
+\nimi{󱥩}{tawa}{go; \textit{prep.}\ for, to, in the opinion of | \textit{pv.} going to}
+\nimi{󱥪}{telo}{water, liquid; beverage}
+\nimi{󱥫}{tenpo}{time, duration, period, event}
+\nimi{󱥬}{toki}{communicate, say, talk; language; hello}
+\nimi{󱥭}{tomo}{indoors; building, home, room}
+\nimi{󱥾}{tonsi}{non-binary, trans}
+\nimi{󱥮}{tu}{two | separate, cut}
+\nimi{󱥯}{unpa}{sex, sexual relations}
+\nimi{󱥰}{uta}{mouth, lips, jaw}
+\nimi{󱥱}{utala}{battle, challenge, compete}
+\nimi{󱥲}{walo}{white, whitish; pale}
+\nimi{󱥳}{wan}{unique; one}
+\nimi{󱥴}{waso}{bird, flying creature}
+\nimi{󱥵}{wawa}{powerful; confident; intense}
+\nimi{󱥶}{weka}{absent, away, ignored}
+\nimi{󱥷}{wile}{must, need, require; want}
+\end{description}
+
+%% CONTENT ENDS
+
+% Back cover
+
+\newpage
+
+\begin{samepage}
+
+\subsection{{\sitpon󱦈} nimi ku suli}
+
+\noindent Some words are not in pu but have been accepted into the official lexicon by including them in the 
+second book, ku. nimi ku are divided into nimi ku suli and nimi ku lili, with the former 
+being much more commonly used than the latter. Here is every nimi ku suli:
+
+\begin{description}[itemsep=-5.6pt,labelsep=1em,font=\textit]
+\nimi{󱦃}{epiku}{epic, cool, amazing}
+\nimi{󱥿}{jasima}{reflect, mirror; opposite}
+\nimi{󱦀}{kijetesantakalu}{racoon, squirrel; \\ Procynoidae, Musteloidea}
+\nimi{󱥻}{kipisi}{split, cut; sharp}
+\nimi{󱦄}{kokosila}{speak non-toki pona in a toki pona taso setting}
+\nimi{󱦈}{ku}{interact with Toki Pona Dictionary}
+\nimi{󱦅}{lanpan}{take, get, catch}
+\nimi{󱥼}{leko}{square, corner, stairs}
+\nimi{󱦂}{meso}{middle, medium, mediocre}
+\nimi{󱦇}{misikeke}{medicine, medical}
+\nimi{󱥽}{monsuta}{fear, monster, danger}
+\nimi{󱦆}{n}{\textit{thinking, recognition}}
+\nimi{󱦁}{soko}{fungus}
+\nimi{󱥾}{tonsi}{nonbinary, non-cis}
+\end{description}
+\end{samepage}
+
+\end{document}
